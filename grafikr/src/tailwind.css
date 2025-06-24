@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+    --color-grafikrBlack: #000000;
+    --color-grafikrWhite: #FFFFFF;
+    --color-grafikGrey: #F6F4F4;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('@/assets/fonts/vf/PlusJakartaSans[wght].ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('@/assets/fonts/vf/PlusJakartaSans-Italic[wght].ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+.font-plusjakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}

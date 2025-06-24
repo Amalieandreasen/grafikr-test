@@ -4,17 +4,206 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="descripton" content="" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-    <script src="./assets/app.js" defer></script>
+    <title>Grafikr - Landingpage (test)</title>
+    <script type="module" src="./src/main.ts"></script>
+    <link href="./src/tailwind.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="./public/img/logo.svg" alt="" />
-      </div>
+    <header
+      class="bg-grafikGrey px-[2rem] py-[1rem] md:py-[20px] md:px-[48px] sticky top-0 backdrop-blur-sm">
+      <nav class="flex items-center justify-around">
+        <div>
+          <a href="/">
+            <img src="./public/img/logo.svg" alt="Logo" class="w-40" />
+          </a>
+        </div>
+
+        <!-- Menu -->
+        <ul
+          class="navmenu fixed flex-col gap-0 bg-grafikrBlack text-center w-full top-[70px] left-[100%] md:static md:flex md:flex-row md:w-auto md:bg-transparent md:text-grafikrBlack md:top-auto md:left-auto">
+          <li class="list-none">
+            <a
+              href="/"
+              class="text-grafikrWhite text-[14px] m-[16px] navlink md:text-grafikrBlack md:m-0 md:px-4 md:py-2 font-plusjakarta font-[400]"
+              >Forside</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="text-grafikrWhite text-[14px] m-[16px] navlink md:text-grafikrBlack md:m-0 md:px-4 md:py-2 font-plusjakarta font-[400]"
+              >Kompetencer</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="text-grafikrWhite text-[14px] m-[16px] navlink md:text-grafikrBlack md:m-0 md:px-4 md:py-2 font-plusjakarta font-[400]"
+              >Cases</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="text-grafikrWhite text-[14px] m-[16px] navlink md:text-grafikrBlack md:m-0 md:px-4 md:py-2 font-plusjakarta font-[400]"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="text-grafikrWhite text-[14px] m-[16px] navlink md:text-grafikrBlack md:m-0 md:px-4 md:py-2 font-plusjakarta font-[400]"
+              >Om os</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="text-grafikrWhite text-[14px] m-[16px] navlink md:text-grafikrBlack md:m-0 md:px-4 md:py-2 font-plusjakarta font-[400]"
+              >Kontakt os</a
+            >
+          </li>
+        </ul>
+
+        <button
+          class="bg-grafikrBlack text-grafikrWhite ml-4 hidden md:block font-plusjakarta font-[400] py-[12px] px-[24px] text-[14px]">
+          <a href="#">Hent e-bog</a>
+        </button>
+
+        <div
+          class="hamburger-btn flex flex-col cursor-pointer ml-auto md:hidden z-100">
+          <span
+            class="bar block w-[40px] h-[3px] my-[5px] mx-auto bg-grafikrBlack transition-all"></span>
+          <span
+            class="bar block w-[40px] h-[3px] my-[5px] mx-auto bg-grafikrBlack transition-all"></span>
+          <span
+            class="bar block w-[40px] h-[3px] my-[5px] mx-auto bg-grafikrBlack transition-all"></span>
+        </div>
+      </nav>
     </header>
-    <main></main>
+
+    <main>
+      <section
+        class="bg-grafikGrey flex flex-col justify-center items-center py-[2rem] md:px-[4rem]">
+        <h3
+          class="font-plusjakarta font-[400] text-grafikrBlack text-[14px] my-6 text-center">
+          SHOPIFY EXPERTS
+        </h3>
+        <h1
+          class="font-plusjakarta font-[700] text-grafikrBlack text-[21px] md:text-[48px] mb-4 text-center">
+          Et dedikeret e-commerce bureau
+        </h1>
+        <img
+          src="./public/img/mobile/image-1.png"
+          srcset="./public/img/desktop/image-1-desktop.png 768w"
+          alt="Billede af ledelsen hos Grafikr" />
+      </section>
+
+      <section>
+        <div
+          class="py-[2rem] px-[1rem] md:py-[4rem] md:px-[4rem] flex flex-col justify-center items-center">
+          <h2
+            class="font-plusjakarta font-[700] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center">
+            Kompetencer
+          </h2>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[14px] md:text-[24px] mb-2 text-center md:max-w-[70vw]">
+            Ved at kombinere analyse, strategi, kreativitet, design og
+            udvikling, skaber vi positiv gennemslagskraft for ambitiøse brands,
+            som ønsker at opnå målbar afkast.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center md:flex-row md:gap-35 py-[2rem] md:px-[4rem]">
+          <div
+            class="flex flex-col justify-center items-center md:w-1/2 md:items-start gap-6">
+            <h3
+              class="font-plusjakarta font-[400] text-grafikrBlack text-[24px] md:text-[32px] mb-2 text-center md:text-left">
+              Webdesign
+            </h3>
+            <p
+              class="font-plusjakarta font-[400] text-grafikrBlack text-[14px] md:text-[24px] mb-2 text-center md:text-left">
+              Vi skaber mindeværdige brugeroplevelser og øget salg med unikt
+              webdesign.
+            </p>
+            <button
+              class="bg-grafikrBlack text-grafikrWhite hidden md:block font-plusjakarta font-[400] py-[12px] px-[24px] text-[14px]">
+              <a href="#">Læs mere</a>
+            </button>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="./public/img/mobile/image-2.png"
+              srcset="./public/img/desktop/image-2.png 768w"
+              alt="Billede af 2 skærme med programmet Figma kørende"
+              class="w-screen object-cover md:w-full" />
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="flex flex-col justify-center items-center md:flex-row-reverse md:gap-35 py-[2rem] md:px-[4rem]">
+        <div
+          class="flex flex-col justify-center items-center md:w-1/2 md:items-end gap-6">
+          <h3
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[24px] md:text-[32px] mb-2 text-center md:text-right">
+            Webudvikling i Shopify
+          </h3>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[14px] md:text-[24px] mb-2 text-center md:text-right">
+            Vi er certificerede Shopify eksperter og udvikler mindeværdige
+            e-commerce løsninger
+          </p>
+          <button
+            class="bg-grafikrBlack text-grafikrWhite hidden md:block font-plusjakarta font-[400] py-[12px] px-[24px] text-[14px]">
+            <a href="#">Læs mere</a>
+          </button>
+        </div>
+        <div class="md:w-1/2">
+          <img
+            src="./public/img/mobile/image-3.png"
+            srcset="./public/img/desktop/image-3.png 768w"
+            alt="Billede af en webudvikler"
+            class="w-screen object-cover md:w-full" />
+        </div>
+      </div>
+
+      <section class="py-[4rem]">
+        <h2
+          class="font-plusjakarta font-[700] text-grafikrBlack text-[21px] md:text-[36px] mb-[4rem] text-center">
+          Arbejdskulturen hos Grafikr
+        </h2>
+        <div class="bg-grafikGrey">
+          <img
+            src="./public/img/mobile/image-4.png"
+            alt="Billede af medarbejdere hos Grafikr"
+            srcset="./public/img/desktop/image-4.png 768w"
+            class="md:p-[4rem] p-[2rem]" />
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
+
+<style>
+  .hamburger-btn.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-btn.active .bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+  }
+  .hamburger-btn.active .bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+
+  .navmenu {
+    left: 100%;
+    transition: left 0.3s ease;
+    top: 70px;
+  }
+  .navmenu.active {
+    left: 0;
+  }
+</style>
