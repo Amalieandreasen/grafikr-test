@@ -7,8 +7,11 @@
     <title>Grafikr - Landingpage (test)</title>
     <script type="module" src="./src/main.ts"></script>
     <link href="./src/tailwind.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@splidejs/splide/dist/css/splide.min.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header
       class="bg-grafikGrey px-[2rem] py-[1rem] md:py-[20px] md:px-[48px] sticky top-0 backdrop-blur-sm">
       <nav class="flex items-center justify-around">
@@ -20,7 +23,7 @@
 
         <!-- Menu -->
         <ul
-          class="navmenu fixed flex-col gap-0 bg-grafikrBlack text-center w-full top-[70px] left-[100%] md:static md:flex md:flex-row md:w-auto md:bg-transparent md:text-grafikrBlack md:top-auto md:left-auto">
+          class="navmenu fixed flex-col gap-0 bg-grafikrBlack text-center w-full md:static md:flex md:flex-row md:w-auto md:bg-transparent md:text-grafikrBlack md:top-auto md:left-auto">
           <li class="list-none">
             <a
               href="/"
@@ -71,7 +74,7 @@
         </button>
 
         <div
-          class="hamburger-btn flex flex-col cursor-pointer ml-auto md:hidden z-100">
+          class="hamburger-btn flex flex-col cursor-pointer ml-auto md:hidden z-[100]">
           <span
             class="bar block w-[40px] h-[3px] my-[5px] mx-auto bg-grafikrBlack transition-all"></span>
           <span
@@ -84,7 +87,7 @@
 
     <main>
       <section
-        class="bg-grafikGrey flex flex-col justify-center items-center py-[2rem] md:px-[4rem]">
+        class="bg-grafikGrey flex flex-col justify-center items-center py-[2rem] md:px-[4rem] xl:px-[10rem]">
         <h3
           class="font-plusjakarta font-[400] text-grafikrBlack text-[14px] my-6 text-center">
           SHOPIFY EXPERTS
@@ -101,7 +104,7 @@
 
       <section>
         <div
-          class="py-[2rem] px-[1rem] md:py-[4rem] md:px-[4rem] flex flex-col justify-center items-center">
+          class="py-[2rem] px-[1rem] md:py-[4rem] md:px-[4rem] xl:px-[10rem] flex flex-col justify-center items-center">
           <h2
             class="font-plusjakarta font-[700] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center">
             Kompetencer
@@ -115,7 +118,7 @@
         </div>
 
         <div
-          class="flex flex-col justify-center items-center md:flex-row md:gap-35 py-[2rem] md:px-[4rem]">
+          class="flex flex-col justify-center items-center md:flex-row md:gap-35 py-[2rem] md:px-[4rem] xl:px-[10rem]">
           <div
             class="flex flex-col justify-center items-center md:w-1/2 md:items-start gap-6">
             <h3
@@ -143,7 +146,7 @@
       </section>
 
       <div
-        class="flex flex-col justify-center items-center md:flex-row-reverse md:gap-35 py-[2rem] md:px-[4rem]">
+        class="flex flex-col justify-center items-center md:flex-row-reverse md:gap-35 py-[2rem] md:px-[4rem] xl:px-[10rem]">
         <div
           class="flex flex-col justify-center items-center md:w-1/2 md:items-end gap-6">
           <h3
@@ -182,8 +185,257 @@
             class="md:p-[4rem] p-[2rem]" />
         </div>
       </section>
+
+      <section class="py-[4rem]">
+        <h2
+          class="font-plusjakarta font-[700] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center">
+          Arbejd med nogle af de største brands
+        </h2>
+
+        <section class="splide p-4">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li
+                class="splide__slide relative bg-[url('./public/img/desktop/image-5.png')] bg-cover bg-center h-[500px]">
+                <a href="#">
+                  <p
+                    class="absolute bottom-0 left-0 m-4 font-plusjakarta font-[400] text-[24px] text-grafikrWhite">
+                    Barons
+                  </p>
+                </a>
+              </li>
+              <li
+                class="splide__slide relative bg-[url('./public/img/desktop/image-6.png')] bg-cover bg-center h-[500px]">
+                <a href="#">
+                  <p
+                    class="absolute bottom-0 left-0 m-4 font-plusjakarta font-[400] text-[24px] text-grafikrWhite">
+                    Basic Apperal
+                  </p>
+                </a>
+              </li>
+              <li
+                class="splide__slide relative bg-[url('./public/img/desktop/image-7.png')] bg-cover bg-center h-[500px]">
+                <a href="#">
+                  <p
+                    class="absolute bottom-0 left-0 m-4 font-plusjakarta font-[400] text-[24px] text-grafikrWhite">
+                    Shaping New Tomorrow
+                  </p>
+                </a>
+              </li>
+              <li
+                class="splide__slide relative bg-[url('./public/img/desktop/image-5.png')] bg-cover bg-center h-[500px]">
+                <a href="#">
+                  <p
+                    class="absolute bottom-0 left-0 m-4 font-plusjakarta font-[400] text-[24px] text-grafikrWhite">
+                    Barons
+                  </p>
+                </a>
+              </li>
+              <li
+                class="splide__slide relative bg-[url('./public/img/desktop/image-6.png')] bg-cover bg-center h-[500px]">
+                <a href="#">
+                  <p
+                    class="absolute bottom-0 left-0 m-4 font-plusjakarta font-[400] text-[24px] text-grafikrWhite">
+                    Basic Apperal
+                  </p>
+                </a>
+              </li>
+              <li
+                class="splide__slide relative bg-[url('./public/img/desktop/image-7.png')] bg-cover bg-center h-[500px]">
+                <a href="#">
+                  <p
+                    class="absolute bottom-0 left-0 m-4 font-plusjakarta font-[400] text-[24px] text-grafikrWhite">
+                    Shaping New Tomorrow
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section
+        class="py-[4rem] flex flex-col items-center justify-center md:flex-row">
+        <h2
+          class="font-plusjakarta font-[700] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center">
+          Mød dine (Måske) nye kollegaer
+        </h2>
+        <div class="flex gap-6 mt-[1rem] flex-wrap items-center justify-center">
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Kiranan">
+            Kiranan,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Erik">
+            Erik,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Anders">
+            Anders,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Lasse">
+            Lasse,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Pernille">
+            Pernille,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Magnus">
+            Magnus,
+          </p>
+        </div>
+        <div class="flex gap-6 mt-[2rem] flex-wrap items-center justify-center">
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Rasmus">
+            Rasmus,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Christian">
+            Christian,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Tobias">
+            Tobias,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Tor">
+            Tor,
+          </p>
+          <p
+            class="font-plusjakarta font-[400] text-grafikrBlack text-[21px] md:text-[36px] mb-4 text-center"
+            data-name="Thomas">
+            Thomas
+          </p>
+        </div>
+        <img
+          id="hoverImage"
+          class="hidden opacity-0 transition-opacity duration-500 absolute pointer-events-none w-[150px] object-cover z-50" />
+      </section>
     </main>
-    <footer></footer>
+    <footer
+      class="bg-grafikrBlack flex flex-col justify-center items-center py-[2rem] md:px-[4rem] xl:px-[10rem]">
+      <section class="flex flex-col md:flex-row justify-between w-full">
+        <div class="p-[1rem]">
+          <h3
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[24px] mb-2 text-center md:text-left">
+            Support
+          </h3>
+
+          <div
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[14px] mb-2 text-center md:text-left">
+            <p>Grafikr A/S</p>
+            <p>CVR: 37783277</p>
+          </div>
+
+          <div
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[14px] mb-2 text-center md:text-left">
+            <p>+45 69 69 29 15</p>
+            <p>kontakt@grafikr.dk</p>
+          </div>
+
+          <div
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[14px] mb-2 text-center md:text-left">
+            <p>Randers:</p>
+            <p>
+              Jernbanegade 12a <br />
+              8900 Randers C
+            </p>
+          </div>
+        </div>
+
+        <div class="p-[1rem]">
+          <h3
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[24px] mb-2 text-center md:text-left">
+            Information
+          </h3>
+
+          <ul
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[14px] mb-2 text-center md:text-left">
+            <li class="list-none">Karriere (4 åbne stillinger)</li>
+            <li class="list-none">Hent e-bog om Shopify Plus</li>
+            <li class="list-none">Cases</li>
+            <li class="list-none">Blog</li>
+            <li class="list-none">Om os</li>
+            <li class="list-none">Kontakt os</li>
+          </ul>
+        </div>
+
+        <div class="p-[1rem]">
+          <h3
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[24px] mb-2 text-center md:text-left">
+            Udvalgte cases
+          </h3>
+
+          <ul
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[14px] mb-2 text-center md:text-left">
+            <li class="list-none">ARKK Copenhagen</li>
+            <li class="list-none">Basic Apperal</li>
+            <li class="list-none">Barons</li>
+            <li class="list-none">Camille Brinch Jewellery</li>
+            <li class="list-none">EYDA</li>
+            <li class="list-none">Noella Fashion</li>
+            <li class="list-none">SACKit</li>
+          </ul>
+        </div>
+
+        <div class="p-[1rem]">
+          <form action="" class="max-w-md mx-auto p-4">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Navn"
+              class="w-full bg-white text-black placeholder-gray-400 border border-gray-300 p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-gray-500" />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              class="w-full bg-white text-black placeholder-gray-400 border border-gray-300 p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-gray-500" />
+            <button
+              type="submit"
+              class="w-full text-grafikrWhite p-3 flex items-center justify-center gap-2 border-grafikrWhite border-1">
+              Tilmeld vores nyhedsbrev
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.4 13L16.4667 6.06665M23.4 13L16.4667 19.9333M23.4 13H1.73334"
+                  stroke="white" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section
+        class="flex clex-col md:flex-row justify-between w-full items-end">
+        <div>
+          <p
+            class="font-plusjakarta font-[500] text-grafikrWhite text-[14px] mb-2 text-center md:text-left">
+            © Grafikr A/S. Alle rettigheder forbeholdt 2023
+          </p>
+        </div>
+        <div>
+          <img src="./public/img/Circle.svg" alt="Cirkel" class="mt-[2rem]" />
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
 
@@ -205,5 +457,30 @@
   }
   .navmenu.active {
     left: 0;
+  }
+
+  .splide__arrow {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    opacity: 0.8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+  }
+
+  .splide__arrow--prev {
+    background-image: url("/img/arrowLeft.svg");
+  }
+
+  .splide__arrow--next {
+    background-image: url("/img/arrowRight.svg");
+  }
+
+  .splide__arrow svg {
+    display: none;
   }
 </style>
