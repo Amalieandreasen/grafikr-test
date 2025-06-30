@@ -13,7 +13,7 @@ const navMenu = document.querySelector('.navmenu') as HTMLElement | null;
       type: "loop",
       perPage: 3,
       perMove: 1,
-      gap: "1rem",
+      gap: "4rem",
       pagination : true,
       breakpoints: {
         768: {
